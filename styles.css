@@ -35,7 +35,6 @@ main {
   background-color: rgba(255, 255, 255, 0.7);
   margin: 20px auto 0 auto;
   max-width: 80%;
-  box-sizing: border-box; 
 }
 
 .contact {
@@ -55,7 +54,6 @@ main {
   background-color: rgba(255, 255, 255, 0.7);
   margin: 20px auto 0 auto;
   max-width: 70%;
-  box-sizing: border-box; 
 }
 
 .resume {
@@ -73,7 +71,6 @@ main {
   background-color: rgba(255, 255, 255, 0.8);
   margin: 20px auto 0 auto;
   max-width: 90%;
-  box-sizing: border-box; 
 }
 
 table {
@@ -86,6 +83,23 @@ td {
   border: 1px solid #ccc;
   padding: 8px;
   text-align: left;
+}
+
+.project-section {
+  position: relative;
+  width: 100%;
+  background-image: url('images/PortfolioBackground.jpeg'); 
+  background-size: cover;
+}
+
+.project-container {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 20px auto 0 auto;
+  max-width: 90%;
 }
 
 
