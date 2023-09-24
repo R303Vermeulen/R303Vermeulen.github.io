@@ -24,7 +24,6 @@ main {
   height: 100vh;
   background-image: url('images/MaroonBells.jpeg'); 
   background-size: cover;
-  background-position: center;
 }
 
 .about-text {
@@ -32,7 +31,7 @@ main {
   z-index: 1;
   padding: 20px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
   margin: 20px auto 0 auto;
   max-width: 80%;
 }
@@ -51,7 +50,7 @@ main {
   z-index: 1;
   padding: 20px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
   margin: 20px auto 0 auto;
   max-width: 70%;
 }
