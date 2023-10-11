@@ -125,8 +125,8 @@ td {
   position: sticky;
   top: 0;
   width: 100%;
-  height: 7%;
   z-index: 10;
+  height: 75px;
 
   display: flex;
   justify-content: space-between;
@@ -149,9 +149,13 @@ td {
 .navbar a {
   color: white;
   font-weight: bold;
-  margin: 0 12px;
+  margin: 0px 12px;
   text-decoration: none;
   letter-spacing: 2px;
+}
+
+.navbar img {
+  height: 70px;
 }
 
 /* CSS for page footer */
