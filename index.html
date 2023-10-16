@@ -47,7 +47,7 @@
               alt="My Headshot Cropped in a Circle"
             />
           </div>
-          <div class="side-by-side">
+          <div class="side-by-side" id="containerToFlip">
             <img class="about-image"
               src="images/HeadshotSki.jpg"
               alt="My Headshot Cropped in a Circle"
@@ -72,6 +72,25 @@
                 </p>
             </div>
           </div>
+          <script>
+
+            function updateLayout() {
+
+              var screenWidth = window.innerWidth;
+              var sideBySideContainer = document.getElementById("containerToFlip");
+        
+              if (screenWidth < 1000) {
+                sideBySideContainer.style.flexDirection = 'column-reverse';
+              }
+              else {
+                sideBySideContainer.style.flexDirection = 'row';
+              }
+            }
+            
+            document.addEventListener('DOMContentLoaded', updateLayout);
+            window.addEventListener('resize', updateLayout);
+
+          </script>
         </div>
       </div>
     </main>

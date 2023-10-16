@@ -61,7 +61,7 @@
                 </div>
               </div>
           </div>
-          <div class="p-side-by-side">
+          <div class="p-side-by-side" id="containerToFlip1">
             <div class="project-details">
               <div class="project-title">
                 <h3>
@@ -132,7 +132,7 @@
               </div>
             </div>
           </div>  
-          <div class="p-side-by-side">
+          <div class="p-side-by-side" id="containerToFlip2">
             <div class="project-details">
               <div class="project-title">
                 <h3>
@@ -169,8 +169,47 @@
                 />
               </a>
             </div>
-          </div>  
+          </div> 
           <div class="p-side-by-side">
+            <div class="project-details-2">
+              <div class="project-title">
+                <h3>
+                  Image Decode w/ Parallel Processing Using C & C++
+                </h3>
+              </div>
+              <div class="project-description">
+                <p>
+                  Constructed an algorithm featuring dynamic memory allocation to decode a
+                   compressed .bin file & convert it to a .bmp image.
+                  Quadrupled efficiency by utilizing parallel processing, w/ each path
+                   converting a quarter of the data stream into pixel objects.
+                  Engineered various class structures to minimize memory used by malloc,
+                   merge the pixel data, & effectively create the bitmap file.
+                </p>
+                <br>
+              </div>
+            </div>
+            <div id="line"></div>
+            <div class="project-details-2">
+              <div class="project-title">
+                <h3>
+                  Simulated Dynamic Memory Allocation Using C & C++
+                </h3>
+              </div>
+              <div class="project-description">
+                <p>
+                  Created a dynamic heap that stimulates DMA by removing the static heap
+                   & using BRK & SBRK to relocate the program break.
+                  Developed my own 2 functions to manipulate the dynamic heap,
+                   emulating the standard library functions malloc and free.
+                  Produced a function from scratch to go through the entire dynamic
+                   heap & locate the area best fitting for a chunk of new data.
+                </p>
+                <br>
+              </div>
+            </div>
+          </div>   
+          <div class="p-side-by-side-end">
             <div class="project-image">
               <a href="index.html">
                 <img
@@ -198,6 +237,35 @@
               </div>
             </div>
           </div>
+          <script>
+
+            function updateLayout() {
+
+              var screenWidth = window.innerWidth;
+              var sideBySideContainer1 = document.getElementById("containerToFlip1");
+              var sideBySideContainer2 = document.getElementById("containerToFlip2");
+              var lineElement = document.getElementById("line");
+        
+              if (screenWidth < 1000) {
+                sideBySideContainer1.style.flexDirection = 'column-reverse';
+                sideBySideContainer2.style.flexDirection = 'column-reverse';
+                lineElement.style.width = '100%';
+                lineElement.style.height = '1px';
+                lineElement.style.backgroundColor = 'black';
+              }
+              else {
+                sideBySideContainer1.style.flexDirection = 'row';
+                sideBySideContainer2.style.flexDirection = 'row';
+                lineElement.style.width = '1px';
+                lineElement.style.height = '200px';
+                lineElement.style.backgroundColor = 'black';
+              }
+            }
+            
+            document.addEventListener('DOMContentLoaded', updateLayout);
+            window.addEventListener('resize', updateLayout);
+
+          </script>
         </div>
       </div>
     </main>
