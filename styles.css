@@ -158,6 +158,29 @@ td {
   max-width: 80%;
 }
 
+.project-details {
+  max-width:50%;
+}
+
+.project-description {
+  text-align: left;
+}
+
+.p-side-by-side {
+  display: flex;
+  align-items:center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1000px) {
+  .p-side-by-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
 .blog {
   font-family: 'Merienda';
   position: relative;
@@ -175,7 +198,7 @@ td {
   text-align: center;
   background-color: rgba(255, 255, 255, 0.8);
   margin: 20px auto 40px auto;
-  max-width: 90%;
+  max-width: 70%;
 }
 
 
