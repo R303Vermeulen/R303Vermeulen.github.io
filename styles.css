@@ -112,7 +112,7 @@ main {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-image: url('images/ClearCreek.png'); 
+  background-image: url('images/YosemiteTrees.png'); 
   background-size: cover;
   background-position: center;
 }
@@ -148,7 +148,7 @@ td {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-image: url('images/YosemiteRiver.png'); 
+  background-image: url('images/LookoutMountain.jpg'); 
   background-size: cover;
   background-position: center;
 }
